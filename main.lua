@@ -8,6 +8,7 @@ local RunService = game:GetService("RunService")
 if plr.Name == getgenv().Main then
 else
     --// Main
+    local load = loadstring(game:HttpGet(getgenv().Script)()
     if getgenv().AntiAfk == true then
         loadstring(game:HttpGet("https://pastebin.com/raw/GzNxjV6R"))()
     end
