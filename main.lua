@@ -16,7 +16,14 @@ else
         loadstring(game:HttpGet("https://pastebin.com/raw/GzNxjV6R"))()
     end
     if BoostCPU == true then
-        
+        setfps(15)
+        settings().Physics.PhysicsEnvironmentalThrottle = 1
+        settings().Rendering.QualityLevel = 'Level01'
+        UserSettings():GetService('UserGameSettings').MasterVolume = 0
+        local gui = game:GetService("GuiService")
+        gui.AutoSelectGuiEnabled = false
+        gui.GuiNavigationEnabled = false
+        loadstring(game:HttpGet("https://pastebin.com/raw/VSjtWEDe"))()
         --// Level 1
         for _,v in pairs(workspace:GetDescendants()) do
         if v.ClassName == "Part"
