@@ -1,19 +1,22 @@
-
+local Main = "kirillpro76"
+local AntiAfk = true
+local BoostCPU = true
+local Script = ""
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 local plr = game:GetService("Players").LocalPlayer
 local RunService = game:GetService("RunService")
 
-if plr.Name == getgenv().Main then
+if plr.Name == Main then
 else
     --// Main
-    local load = loadstring(game:HttpGet(getgenv().Script)()
-    if getgenv().AntiAfk == true then
+    local load = loadstring(game:HttpGet(Script)()
+    if AntiAfk == true then
         loadstring(game:HttpGet("https://pastebin.com/raw/GzNxjV6R"))()
     end
-    if getgenv().BoostCPU == true then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RawLunaHub/AltControl/main/boostcpu.lua")()
+    if BoostCPU == true then
+        
         --// Level 1
         for _,v in pairs(workspace:GetDescendants()) do
         if v.ClassName == "Part"
